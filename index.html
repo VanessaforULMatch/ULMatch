@@ -1032,11 +1032,11 @@ function vQuestion(i){
     }).join("")+'</div>';
   } else if(i===3){
     body = '<div class="options">'+Object.keys(QNO).map(function(k){
-      return '<button class="opt" data-q="qn" data-v="'+k+'" aria-pressed="'+(a.qn.indexOf(k)>=0)+'"><span>'+icon(k==="any"?"star":"sprout",20)+'</span><span><b>'+L(QNO[k])+'</b></span><span class="radio" style="border-radius:6px"></span></button>';
+      return '<button class="opt" data-q="qn" data-v="'+k+'" aria-pressed="'+(a.qn.indexOf(k)>=0)+'"><span><b>'+L(QNO[k])+'</b></span><span class="radio" style="border-radius:6px"></span></button>';
     }).join("")+'</div>';
   } else if(i===4){
     body = '<div class="options">'+Object.keys(Q4O).map(function(k){
-      return '<button class="opt" data-q="q4" data-v="'+k+'" aria-pressed="'+(a.q4.indexOf(k)>=0)+'"><span>'+icon("pin",20)+'</span><span><b>'+L(Q4O[k])+'</b></span><span class="radio" style="border-radius:6px"></span></button>';
+      return '<button class="opt" data-q="q4" data-v="'+k+'" aria-pressed="'+(a.q4.indexOf(k)>=0)+'"><span><b>'+L(Q4O[k])+'</b></span><span class="radio" style="border-radius:6px"></span></button>';
     }).join("")+'</div>';
   } else if(i===5){
     body = '<div class="options">'+Object.keys(Q5O).map(function(k){var o=Q5O[k];
